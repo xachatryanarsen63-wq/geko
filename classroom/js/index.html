@@ -1,28 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <title>Overdrive Rentals</title>
+  <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <div class="app">
-        <header>
-            <h1 class="title">Ginance</h1>
-            <div id="balance"></div>
-            <div id="quantity"></div>
-        </header>
-        <div id="price"></div>
-        <div class="btn_group">
-            <button class="btn" id="buy">Buy</button>
-            <button class="btn" id="sell">Sell</button>
-        </div>
-        <div class="history-container">
-    <h3>Transaction History</h3>
-    <ul id="historyList"></ul>
+
+<header id="siteHeader">
+  <button id="navToggle">☰</button>
+  <nav id="mainNav">
+    <a data-nav href="#fleet">Cars</a>
+    <a data-nav href="#faq">FAQ</a>
+  </nav>
+</header>
+
+
+<section id="fleet">
+  <h1>Fleet</h1>
+
+  <div>
+    <button class="pill is-active" data-filter="all">All</button>
+    <button class="pill" data-filter="suv">SUV</button>
+    <button class="pill" data-filter="electric">EV</button>
+  </div>
+
+  <div id="fleetGrid"></div>
+</section>
+
+
+<section>
+<form id="bookingForm">
+
+  <input id="pickupDate" type="date">
+  <input id="returnDate" type="date">
+
+  <select id="carClass">
+    <option value="all">All</option>
+    <option value="suv">SUV</option>
+    <option value="electric">Electric</option>
+  </select>
+
+  <input id="pickupLoc" value="Downtown Depot">
+
+  <button>
+    Search
+  </button>
+
+</form>
+
+<p id="bookingHint"></p>
+</section>
+
+
+<section id="reviews">
+  <button id="dispatchPrev">←</button>
+
+  <div id="dispatch">
+    <div id="dispatchTrack"></div>
+    <div id="dispatchDots"></div>
+  </div>
+
+  <button id="dispatchNext">→</button>
+</section>
+
+
+<section id="faq">
+  <div id="accordion"></div>
+</section>
+
+
+<div id="modalBackdrop">
+
+  <div class="modal">
+
+    <button id="modalClose">
+      X
+    </button>
+
+    <div id="modalBody"></div>
+
+  </div>
+
 </div>
-    </div>
-    <script src="script.js"></script>
+
+
+<div id="roadSpine">
+  <div id="spineCar"></div>
+</div>
+
+
+<footer>
+© <span id="year"></span>
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>

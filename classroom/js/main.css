@@ -1,115 +1,42 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #111;
-    padding: 50px;
-    font-family: sans-serif;
-}
-.app {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
-}
-header {
-    position: fixed;
-    top: 0;
-    left: 50px;
-    right: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  font-family: Arial, sans-serif;
+  background:#111;
+  color:white;
 }
 
-.title {
-    color: #0f0;
-    font-size: 64px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+#fleetGrid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
 }
 
-#balance {
-    color: #ccc;
-    font-size: 36px;
-}
-#balance::before {
-    content: "Balance: $";
-}
-#price {
-    font-size: 48px;
-    color: #fff;
-}
-
-#price::before {
-    content: "$";
-}
-
-
-.btn_group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+.car-card {
+  background:#222;
+  padding:20px;
+  border-radius:15px;
 }
 
 .btn {
-    width: 200px;
-    height: 50px;
-    border: none;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #000;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.btn:hover {
-opacity: 0.8;
-transition: 0.3s;
+  padding:10px;
+  cursor:pointer;
 }
 
-#buy {
-    background: #0f0;
+#modalBackdrop {
+  display:none;
+  position:fixed;
+  inset:0;
+  background:#0008;
 }
 
-#sell {
-    background: #f00;
+#modalBackdrop.is-open {
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
-#quantity {
-    color: #ccc;
-    font-size: 36px;
+.modal {
+  background:white;
+  color:black;
+  padding:30px;
+  border-radius:15px;
 }
-#quantity::after {
-    content: "pcs";
-}
-.history-container {
-    margin-top: 20px;
-    color: #ccc;
-    width: 100%;
-    max-height: 200px;
-    overflow-y: auto;
-    border-top: 1px solid #333;
-    padding-top: 20px;
-}
-
-#historyList {
-    list-style: none;
-    font-size: 14px;
-}
-
-#historyList li {
-    margin-bottom: 5px;
-    padding: 5px;
-    border-bottom: 1px solid #222;
-}
-
-.log-buy { color: #f00; }  /* Red for spending */
-.log-sell { color: #0f0; } /* Green for earning */
