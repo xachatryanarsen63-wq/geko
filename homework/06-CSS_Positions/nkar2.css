@@ -1,0 +1,63 @@
+body {
+    background: #ddd;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+}
+
+
+.container div {
+    position: absolute;
+    background: #eee;
+}
+
+
+.green {
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 150px;
+    border: 5px solid green;
+}
+
+
+.red {
+    top: 0;
+    right: 30px;
+    width: 250px;
+    height: 310px;
+    border: 5px solid red;
+}
+
+
+.black {
+    top: 160px;
+    left: 0;
+    width: 250px;
+    height: 300px;
+    border: 5px solid black;
+}
+
+
+.yellow {
+    top: 160px;
+    left: 260px;
+    width: 340px;
+    height: 150px;
+    border: 5px solid yellow;
+}
+
+
+.blue {
+    bottom: 30px;
+    left: 260px;
+    width: 590px;
+    height: 140px;
+    border: 5px solid #00aaff;
+}

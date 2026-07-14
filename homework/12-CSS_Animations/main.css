@@ -1,0 +1,111 @@
+body{
+    background:#1e1e1e;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+
+.traffic-light{
+    background:#222;
+    padding:20px;
+    border-radius:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    gap:20px;
+    width:120px;
+    box-shadow:0 0 20px black;
+}
+
+
+.light{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:#333;
+}
+
+
+.red{ background:#330000; animation:redLight 20s infinite; }
+.yellow{ background:#333000; animation:yellowLight 15s infinite; }
+.green{ background:#003300; animation:greenLight 10s infinite; }
+
+
+@keyframes redLight{
+
+    0%,15%{
+        background:red;
+        box-shadow:0 0 20px red;
+    }
+
+    15%,30%{
+        background:red;
+        box-shadow:0 0 20px red;
+    }
+
+    30%,90%{
+        background:#330000;
+        box-shadow:none;
+    }
+
+    90%,100%{
+        background:red;
+        box-shadow:0 0 20px red;
+    }
+}
+
+@keyframes yellowLight{
+
+    0%,15%{
+        background:#333000;
+        box-shadow:none;
+    }
+
+    15%,30%{
+        background:yellow;
+        box-shadow:0 0 20px yellow;
+    }
+
+    30%,75%{
+        background:#333000;
+        box-shadow:none;
+    }
+
+    75%,90%{
+        background:yellow;
+        box-shadow:0 0 20px yellow;
+    }
+
+    90%,100%{
+        background:#333000;
+        box-shadow:none;
+    }
+}
+
+
+@keyframes greenLight{
+
+    0%,30%{
+        background:#003300;
+        box-shadow:none;
+    }
+
+    30%,60%{
+        background:lime;
+        box-shadow:0 0 20px lime;
+    }
+
+  
+    60%{ background:lime; box-shadow:0 0 20px lime;}
+    65%{ background:#003300; box-shadow:none;}
+    70%{ background:lime; box-shadow:0 0 20px lime;}
+    75%{ background:#003300; box-shadow:none;}
+
+    75%,100%{
+        background:#003300;
+        box-shadow:none;
+    }
+}

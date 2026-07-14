@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.wrap{
+    border: 1px solid #000;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    order: 3;
+}
+a{
+    text-decoration: none;
+    color: white;
+    order: 1;
+}
+button{
+    background-color:aqua;
+    border-radius: 50px;
+}
+.btn{
+    margin-right: 250px;
+    order: 2;
+
+}

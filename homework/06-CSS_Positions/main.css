@@ -1,0 +1,44 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+   
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    gap: 10px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;   
+}
+ .red{
+    background-color: red;
+ }
+
+
+ .green{
+    background-color: green;
+ }
+
+ .blue{
+    background-color: blue;
+ }
+ .white{
+    width: 94px;
+    height: 94px;
+    background-color: white;
+   border: 4px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .circle {
+    width: 50px;
+    height: 50px;
+    border: 4px solid yellow;
+    border-radius: 50%;
+ }

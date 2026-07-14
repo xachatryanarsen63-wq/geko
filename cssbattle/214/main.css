@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 400px;
+  height: 300px;
+  background: #f8f8f8;
+  border: 1px solid #000;
+
+}
+
+.row{}
+
+.r1{}
+.r2{}

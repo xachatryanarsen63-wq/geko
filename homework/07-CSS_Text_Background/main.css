@@ -1,0 +1,58 @@
+.main-title{
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+.section-title{
+    font-size: 24px;
+    font-family: Georgia, serif;
+     letter-spacing: 2px;
+}
+.text-one{
+    font-size: 18px;
+    font-family: 'Times New Roman',serif;
+    line-height: 1.8;
+    text-align: justify;
+}
+.text-two{
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    word-spacing: 6px;
+}
+.text-three{
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    text-align: right;
+}
+.main-link{
+    font-size: 18px;
+    font-family: Verdana,sans-serif;
+    text-decoration: underline;
+    text-decoration-style: double;
+    color: rgb(0, 166, 255);
+}
+.pre-text{
+    white-space:pre;
+}
+.box{
+    width:100%;
+    height:150px;
+}
+.box-one{
+    background-color:lightblue;
+}
+.box-two{
+    background-image: url('Image 14.jpg'); 
+    background-repeat: no-repeat;            
+    background-position: center;        
+    background-size: cover;        
+}
+.box-three {
+    background-image: url('Image 14.jpg'); 
+    background-repeat: repeat;               
+    background-attachment: fixed;            
+    padding: 20px;                          
+}

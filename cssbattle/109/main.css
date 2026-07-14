@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background: #191919;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.row{
+    display: flex;
+    gap: 20px;
+}
+.col{
+    width: 40px;
+    aspect-ratio: 1/1;
+    background: #f6e59c;
+    border-radius: 50%;
+
+}

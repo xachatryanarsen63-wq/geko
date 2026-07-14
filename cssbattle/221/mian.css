@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background: #3F4869;
+}
+.klor{
+    width: 180px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    
+}
+.k1{
+background: #F4DA64;
+left: 60px;
+}
+.k2{
+    background: #E25C57;
+    right: 60px;
+}
+.k3{
+    background: linear-gradient(
+        transparent 50%,
+        #F4DA64 50%
+    );
+    left: 60px;
+}

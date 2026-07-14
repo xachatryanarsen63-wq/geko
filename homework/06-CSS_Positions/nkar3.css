@@ -1,0 +1,26 @@
+body {
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.arrow {
+  position: relative;
+  width: 100px;
+  height: 150px;
+  background: green;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -50px;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid green;
+}

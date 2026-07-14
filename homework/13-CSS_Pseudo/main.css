@@ -1,0 +1,41 @@
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#222;
+}
+
+.board{
+    height:90vmin;
+    width:90vmin;
+    display:grid;
+    grid-template-columns:repeat(8,1fr);
+}
+
+.cell{
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    aspect-ratio: 1/1;
+}
+
+.light{
+    background:#f0d9b5;
+}
+
+.dark{
+    background:#b58863;
+}
+
+
+.cell:not(:empty){
+    cursor:grab;
+}
+
+.cell:not(:empty):active{
+    cursor:grabbing;
+}
