@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background:#111;
+  color:white;
+}
+
+#fleetGrid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+}
+
+.car-card {
+  background:#222;
+  padding:20px;
+  border-radius:15px;
+}
+
+.btn {
+  padding:10px;
+  cursor:pointer;
+}
+
+#modalBackdrop {
+  display:none;
+  position:fixed;
+  inset:0;
+  background:#0008;
+}
+
+#modalBackdrop.is-open {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.modal {
+  background:white;
+  color:black;
+  padding:30px;
+  border-radius:15px;
+}

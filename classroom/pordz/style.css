@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card */
+.card {
+  width: 300px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Image */
+.car-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Content */
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* Rating */
+.rating {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.rating span {
+  font-weight: bold;
+}
+
+.rating small {
+  color: #888;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Divider */
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 15px 0;
+}
+
+/* Price */
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price span {
+  color: #888;
+}
+
+.price h3 {
+  font-size: 18px;
+}
+
+.price small {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  background: #1e73e8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #155ec0;
+}
